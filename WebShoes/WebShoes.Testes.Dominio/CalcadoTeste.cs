@@ -11,7 +11,7 @@ namespace WebShoes.Testes.Dominio
         public void CriarCalcadoTeste()
         {
             Calcado calcado = new Calcado("TÊNIS NIKE AIR JORDAN 1 LOW", "Nike", "Vermelho", 41);
-            Assert.AreEqual("TÊNIS NIKE AIR JORDAN 1 LOW - Nike - Vermelho - 41", calcado.toString());
+            Assert.AreEqual("TÊNIS NIKE AIR JORDAN 1 LOW - Nike - Vermelho - 41", calcado.ToString());
         }
     }
 }
