@@ -3,9 +3,23 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. Camada de Aplicacao", "1. Camada de Aplicacao", "{BDB40FF8-636B-43A2-936A-649C217202C3}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. Camada de Aplicacao", "2. Camada de Aplicacao", "{BDB40FF8-636B-43A2-936A-649C217202C3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebShoes.Aplicacao", "WebShoes.Aplicacao\WebShoes.Aplicacao.csproj", "{39812A00-9FE5-4CC3-A7A8-188CE70EF65E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. Camada de Apresentacao", "1. Camada de Apresentacao", "{3DDA4732-5F86-4BFE-B8E0-64B18062B3D7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. Camada de Dominio", "3. Camada de Dominio", "{8D528D80-9361-476F-A3EF-78617A509323}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4. Camada de Infraestrutura", "4. Camada de Infraestrutura", "{02FB9A98-C2E1-498F-AE58-AFBAE50DBD53}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5. Testes", "5. Testes", "{C1851196-B5CE-4CB5-985D-A3FA5CE9BB56}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Aplicacao", "Aplicacao", "{543D085E-440E-4289-81F2-D0194556C46F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infraestrutura", "Infraestrutura", "{5EAF6DE5-6B08-4D6D-88A4-95898805C1A3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dominio", "Dominio", "{168E9133-EE99-407E-9E12-0A5F5D75519D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,5 +37,8 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{39812A00-9FE5-4CC3-A7A8-188CE70EF65E} = {BDB40FF8-636B-43A2-936A-649C217202C3}
+		{543D085E-440E-4289-81F2-D0194556C46F} = {C1851196-B5CE-4CB5-985D-A3FA5CE9BB56}
+		{5EAF6DE5-6B08-4D6D-88A4-95898805C1A3} = {C1851196-B5CE-4CB5-985D-A3FA5CE9BB56}
+		{168E9133-EE99-407E-9E12-0A5F5D75519D} = {C1851196-B5CE-4CB5-985D-A3FA5CE9BB56}
 	EndGlobalSection
 EndGlobal
