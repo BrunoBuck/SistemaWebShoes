@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. Camada de Aplicacao", "2. Camada de Aplicacao", "{BDB40FF8-636B-43A2-936A-649C217202C3}"
 EndProject
@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebShoes.Dominio", "WebShoe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebShoes.Testes.Dominio", "WebShoes.Testes.Dominio\WebShoes.Testes.Dominio.csproj", "{CCA522C0-A70B-4A8F-9D49-1C5CB677283C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebShoes.Testes.Aplicacao", "WebShoes.Testes.Aplicacao\WebShoes.Testes.Aplicacao.csproj", "{01F2E731-5506-4F3F-AA54-E14AADAED179}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,6 +45,10 @@ Global
 		{CCA522C0-A70B-4A8F-9D49-1C5CB677283C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CCA522C0-A70B-4A8F-9D49-1C5CB677283C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CCA522C0-A70B-4A8F-9D49-1C5CB677283C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01F2E731-5506-4F3F-AA54-E14AADAED179}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01F2E731-5506-4F3F-AA54-E14AADAED179}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01F2E731-5506-4F3F-AA54-E14AADAED179}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01F2E731-5506-4F3F-AA54-E14AADAED179}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -54,5 +60,6 @@ Global
 		{168E9133-EE99-407E-9E12-0A5F5D75519D} = {C1851196-B5CE-4CB5-985D-A3FA5CE9BB56}
 		{48301A4C-9A11-44B0-A43C-B6BBDB88A6AE} = {8D528D80-9361-476F-A3EF-78617A509323}
 		{CCA522C0-A70B-4A8F-9D49-1C5CB677283C} = {168E9133-EE99-407E-9E12-0A5F5D75519D}
+		{01F2E731-5506-4F3F-AA54-E14AADAED179} = {543D085E-440E-4289-81F2-D0194556C46F}
 	EndGlobalSection
 EndGlobal
