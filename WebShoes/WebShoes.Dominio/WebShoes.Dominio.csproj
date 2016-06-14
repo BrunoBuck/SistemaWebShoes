@@ -40,11 +40,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Exceptions\BusinessException.cs" />
     <Compile Include="Contratos\ICalcadoRepositorio.cs" />
     <Compile Include="ItemOrdemDeCompra.cs" />
     <Compile Include="OrdemDeCompra.cs" />
     <Compile Include="Calcado.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Contratos\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
