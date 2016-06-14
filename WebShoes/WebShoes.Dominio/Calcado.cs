@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using WebShoes.Dominio.Exceptions;
 
 namespace WebShoes.Dominio
 {
@@ -10,6 +11,15 @@ namespace WebShoes.Dominio
     {
         public Calcado(string _modelo, string _marca, string _cor, int _tamanho)
         {
+            if (String.IsNullOrEmpty(_modelo))       
+                throw new BusinessException("O modelo não pode estar em branco.");        
+            if (String.IsNullOrEmpty(_marca))            
+                throw new BusinessException("A marca não pode estar em branco.");
+            if (String.IsNullOrEmpty(_cor))
+                throw new BusinessException("A cor não pode estar em branco.");
+            if (!(_tamanho > 0 && _tamanho < 70))
+                throw new BusinessException("O tamanho não é válido");
+
             Modelo = _modelo;
             Marca = _marca;
             Cor = _cor;
