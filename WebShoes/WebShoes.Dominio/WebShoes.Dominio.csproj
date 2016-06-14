@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Contratos\ICalcadoRepositorio.cs" />
+    <Compile Include="Contratos\IItemOrdemDeCompraRepositorio.cs" />
     <Compile Include="Exceptions\BusinessException.cs" />
     <Compile Include="ItemOrdemDeCompra.cs" />
     <Compile Include="OrdemDeCompra.cs" />
