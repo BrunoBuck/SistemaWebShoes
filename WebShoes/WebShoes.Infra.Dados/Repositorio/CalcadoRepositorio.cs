@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using WebShoes.Dominio;
+using WebShoes.Dominio.Contratos;
 using WebShoes.Infra.Dados.Contexto;
 
 namespace WebShoes.Infra.Dados.Repositorio
