@@ -13,7 +13,7 @@ namespace WebShoes.Testes.Dados.Base
     {
         protected override void Seed(CalcadoContexto context)
         {
-            for (int i = 0; i< 10; i++)
+            for (int i = 0; i < 10; i++)
             {
                 Calcado produto = new Calcado("Modelo " + i, "Marca" + i, "Cor " + i, 30 + i);
                 context.Calcados.Add(produto);
@@ -23,4 +23,5 @@ namespace WebShoes.Testes.Dados.Base
 
             base.Seed(context);
         }
+    }
 }

@@ -26,6 +26,11 @@ namespace WebShoes.Dominio
             Tamanho = _tamanho;
         }
 
+        public Calcado()
+        {
+
+        }
+
         public int Id { get; set; }
         public string Cor { get; set; }
         public string Marca { get; set; }
