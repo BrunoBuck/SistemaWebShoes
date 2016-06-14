@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WebShoes.Dominio
 {
-    class ItemOrdemDeCompra
+    public class ItemOrdemDeCompra
     {
         public int Id { get; set; }
     }
