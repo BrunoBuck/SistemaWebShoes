@@ -8,5 +8,6 @@ namespace WebShoes.Dominio
 {
     class ItemOrdemDeCompra
     {
+        public int Id { get; set; }
     }
 }
