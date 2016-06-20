@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. Camada de Aplicacao", "2. Camada de Aplicacao", "{BDB40FF8-636B-43A2-936A-649C217202C3}"
 EndProject
@@ -30,6 +30,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebShoes.Infra.Dados", "WebShoes.Infra.Dados\WebShoes.Infra.Dados.csproj", "{C2F478E8-0B62-4AAB-A1DC-D8FF2A91E83D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebShoes.Testes.Dados", "WebShoes.Testes.Dados\WebShoes.Testes.Dados.csproj", "{17314F0A-2285-472C-85F9-8C500D2F3A6D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebShoes.Apresentacao.Web", "WebShoes.Apresentacao.Web\WebShoes.Apresentacao.Web.csproj", "{BC2007DA-4FF6-4479-94FC-B184E21B4A68}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -61,6 +63,10 @@ Global
 		{17314F0A-2285-472C-85F9-8C500D2F3A6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{17314F0A-2285-472C-85F9-8C500D2F3A6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{17314F0A-2285-472C-85F9-8C500D2F3A6D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC2007DA-4FF6-4479-94FC-B184E21B4A68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC2007DA-4FF6-4479-94FC-B184E21B4A68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC2007DA-4FF6-4479-94FC-B184E21B4A68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC2007DA-4FF6-4479-94FC-B184E21B4A68}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -75,5 +81,6 @@ Global
 		{01F2E731-5506-4F3F-AA54-E14AADAED179} = {543D085E-440E-4289-81F2-D0194556C46F}
 		{C2F478E8-0B62-4AAB-A1DC-D8FF2A91E83D} = {02FB9A98-C2E1-498F-AE58-AFBAE50DBD53}
 		{17314F0A-2285-472C-85F9-8C500D2F3A6D} = {5EAF6DE5-6B08-4D6D-88A4-95898805C1A3}
+		{BC2007DA-4FF6-4479-94FC-B184E21B4A68} = {3DDA4732-5F86-4BFE-B8E0-64B18062B3D7}
 	EndGlobalSection
 EndGlobal
