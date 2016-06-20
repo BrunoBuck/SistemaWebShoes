@@ -28,7 +28,7 @@ namespace WebShoes.Dominio
             double valorTotal = 0;
             foreach (var item in Itens)
             {
-                valorTotal += item.Valor();
+                valorTotal += item.Valor;
             }
             return valorTotal;
         }
