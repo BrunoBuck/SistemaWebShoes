@@ -40,7 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ClienteAplicacao.cs" />
+    <Compile Include="CalcadoAplicacao.cs" />
     <Compile Include="ICalcadoAplicacao.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
