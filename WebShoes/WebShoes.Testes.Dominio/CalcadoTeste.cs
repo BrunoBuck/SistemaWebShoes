@@ -11,36 +11,43 @@ namespace WebShoes.Testes.Dominio
         [TestMethod]
         public void CriarCalcadoTeste()
         {
-            Calcado calcado = new Calcado("TÊNIS NIKE AIR JORDAN 1 LOW", "Nike", "Vermelho", 41);
-            Assert.AreEqual("TÊNIS NIKE AIR JORDAN 1 LOW - Nike - Vermelho - 41", calcado.ToString());
+            Calcado calcado = new Calcado("TÊNIS NIKE AIR JORDAN 1 LOW", "Nike", "Vermelho", 41, 300);
+            Assert.AreEqual("TÊNIS NIKE AIR JORDAN 1 LOW - Nike - Vermelho - 41: R$ 300", calcado.ToString());
         }
 
         [TestMethod]
         [ExpectedException(typeof(BusinessException))]
         public void CriarCalcadoModeloEmBrancoTeste()
         {
-            Calcado calcado = new Calcado("", "Nike", "Vermelho", 41);
+            Calcado calcado = new Calcado("", "Nike", "Vermelho", 41, 300);
         }
 
         [TestMethod]
         [ExpectedException(typeof(BusinessException))]
         public void CriarCalcadoMarcaEmBrancoTeste()
         {
-            Calcado calcado = new Calcado("TÊNIS NIKE AIR JORDAN 1 LOW", "", "Vermelho", 41);
+            Calcado calcado = new Calcado("TÊNIS NIKE AIR JORDAN 1 LOW", "", "Vermelho", 41, 300);
         }
 
         [TestMethod]
         [ExpectedException(typeof(BusinessException))]
         public void CriarCalcadoCorEmBrancoTeste()
         {
-            Calcado calcado = new Calcado("TÊNIS NIKE AIR JORDAN 1 LOW", "Nike", "", 41);
+            Calcado calcado = new Calcado("TÊNIS NIKE AIR JORDAN 1 LOW", "Nike", "", 41, 300);
         }
 
         [TestMethod]
         [ExpectedException(typeof(BusinessException))]
         public void CriarCalcadoTamanhoInvalidoTeste()
         {
-            Calcado calcado = new Calcado("TÊNIS NIKE AIR JORDAN 1 LOW", "Nike", "Vermelho", 215);
+            Calcado calcado = new Calcado("TÊNIS NIKE AIR JORDAN 1 LOW", "Nike", "Vermelho", 215, 300);
+        }
+
+        [TestMethod]
+        [ExpectedException(typeof(BusinessException))]
+        public void CriarCalcadoPrecoInvalidoTeste()
+        {
+            Calcado calcado = new Calcado("TÊNIS NIKE AIR JORDAN 1 LOW", "Nike", "Vermelho", 215, -20);
         }
     }
 }

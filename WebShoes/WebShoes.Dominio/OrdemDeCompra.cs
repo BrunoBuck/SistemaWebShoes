@@ -12,17 +12,26 @@ namespace WebShoes.Dominio
         {
             Status = _status;
             Data = _data;
-            Lista = _lista;
+            Itens = _lista;
         }
 
         public int Id { get; set; }
         public DateTime Data { get; set; }
-        public List<ItemOrdemDeCompra> Lista { get; set; }
+        public List<ItemOrdemDeCompra> Itens { get; set; }
         public string Status { get; set; }
+        public double ValorTotal()
+        {
+            double valorTotal = 0;
+            foreach (var item in Itens)
+            {
+                valorTotal += item.Valor();
+            }
+            return valorTotal;
+        }
 
         public override string ToString()
         {
-            return String.Format("{0} - {1}", Status, Data);
+            return String.Format("{0} - {1}: R$ {2}", Status, Data, ValorTotal());
         }
     }
 }
