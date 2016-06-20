@@ -7,6 +7,7 @@ using WebShoes.Infra.Dados.Repositorio;
 using WebShoes.Dominio;
 using System.Collections.Generic;
 using WebShoes.Dominio.Contratos;
+using WebShoes.Dominio.Exceptions;
 
 namespace WebShoes.Testes.Dados
 {
@@ -32,7 +33,7 @@ namespace WebShoes.Testes.Dados
         [TestMethod]
         public void CriarCalcadoRepositorioTeste()
         {
-            Calcado calcado = new Calcado("Tenis Air", "Nike", "Azul", 40);
+            Calcado calcado = new Calcado("Tenis Air", "Nike", "Azul", 40, 300);
 
             _repositorio.Adicionar(calcado);
 
@@ -41,6 +42,7 @@ namespace WebShoes.Testes.Dados
             Assert.IsTrue(calcado.Id > 0);
             Assert.AreEqual(calcado.Cor, "Azul");
             Assert.AreEqual(calcado.Marca, "Nike");
+            Assert.AreEqual(calcado.Valor, 300);
         }
 
         [TestMethod]
@@ -78,6 +80,20 @@ namespace WebShoes.Testes.Dados
 
         [TestMethod]
         public void DeletarCalcadoRepositorioTeste()
+        {
+            Calcado calcado = new Calcado("Tenis Air", "Nike", "Azul", 40, 300);
+
+            Calcado calcadoCriado = _repositorio.Adicionar(calcado);
+
+            _repositorio.Deletar(calcadoCriado);
+
+            Calcado calcadoDeletado = _contexto.Calcados.Find(calcadoCriado.Id);
+            Assert.IsNull(calcadoDeletado);
+        }
+
+        [TestMethod]
+        [ExpectedException(typeof(BusinessException))]
+        public void DeletarCalcadoComRelacionamentoRepositorioTeste()
         {
             Calcado calcado = _repositorio.Buscar(1);
 

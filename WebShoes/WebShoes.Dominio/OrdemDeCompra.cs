@@ -8,6 +8,10 @@ namespace WebShoes.Dominio
 {
     public class OrdemDeCompra
     {
+        public OrdemDeCompra()
+        {
+
+        }
         public OrdemDeCompra(string _status, DateTime _data, List<ItemOrdemDeCompra> _lista)
         {
             Status = _status;
@@ -32,6 +36,11 @@ namespace WebShoes.Dominio
         public override string ToString()
         {
             return String.Format("{0} - {1}: R$ {2}", Status, Data, ValorTotal());
+        }
+
+        public void AdicionarItens(ItemOrdemDeCompra item)
+        {
+            Itens.Add(item);
         }
     }
 }

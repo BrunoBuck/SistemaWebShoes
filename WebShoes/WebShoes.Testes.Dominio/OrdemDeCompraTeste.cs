@@ -13,7 +13,7 @@ namespace WebShoes.Testes.Dominio
         public void CriarOrdemDeCompraTeste()
         {
             OrdemDeCompra ordem = new OrdemDeCompra("Aguardando Pagamento", new DateTime(2016, 6, 13, 10, 55, 31), new List<ItemOrdemDeCompra>());
-            Assert.AreEqual("Aguardando Pagamento - 13/06/2016 10:55:31", ordem.ToString());
+            Assert.AreEqual("Aguardando Pagamento - 13/06/2016 10:55:31: R$ 0", ordem.ToString());
         }
     }
 }

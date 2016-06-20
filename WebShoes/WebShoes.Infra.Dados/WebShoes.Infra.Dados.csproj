@@ -50,10 +50,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Contexto\CalcadoContexto.cs" />
-    <Compile Include="Contexto\ItemOrdemDeCompraContexto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositorio\CalcadoRepositorio.cs" />
-    <Compile Include="Repositorio\ItemOrdemDeCompraRepositorio.cs" />
+    <Compile Include="Repositorio\OrdemDeCompraRepositorio.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

@@ -18,7 +18,7 @@ namespace WebShoes.Testes.Aplicacao
             Calcado calcado = new Calcado("TÊNIS NIKE AIR JORDAN 1 LOW", 
                                             "Nike", 
                                             "Vermelho", 
-                                            41);
+                                            41, 300);
 
             // ARRANGE - CONFIGURAR OBJETO MENTIRA
             var repositoriofake = new Mock<ICalcadoRepositorio>();

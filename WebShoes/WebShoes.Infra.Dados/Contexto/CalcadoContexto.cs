@@ -12,8 +12,11 @@ namespace WebShoes.Infra.Dados.Contexto
     {
         public CalcadoContexto() : base("CalcadoDB")
         {
+            this.Configuration.LazyLoadingEnabled = false;
         }
 
         public DbSet<Calcado> Calcados { get; set; }
+        public DbSet<OrdemDeCompra> Ordens { get; set; }
+        public DbSet<ItemOrdemDeCompra> Itens { get; set; }
     }
 }

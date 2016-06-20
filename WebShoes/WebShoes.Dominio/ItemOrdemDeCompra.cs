@@ -8,6 +8,7 @@ namespace WebShoes.Dominio
 {
     public class ItemOrdemDeCompra
     {
+        public int Id { get; set; }
         public double Desconto { get; set; }
         public Calcado Calcado { get; set; }
         public int Quantidade { get; set; }
@@ -19,6 +20,13 @@ namespace WebShoes.Dominio
         public ItemOrdemDeCompra()
         {
 
+        }
+
+        public ItemOrdemDeCompra(Calcado calcado, double desconto, int quantidade)
+        {
+            Calcado = calcado;
+            Desconto = desconto;
+            Quantidade = quantidade;
         }
         public override string ToString()
         {

@@ -63,7 +63,7 @@
   <ItemGroup>
     <Compile Include="Base\CriarNovoBancoCalcado.cs" />
     <Compile Include="CalcadoTesteDados.cs" />
-    <Compile Include="ItemOrdemDeCompraTesteDados.cs" />
+    <Compile Include="OrdemDeCompraTesteDados.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
