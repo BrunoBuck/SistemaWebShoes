@@ -90,17 +90,5 @@ namespace WebShoes.Testes.Dados
             Calcado calcadoDeletado = _contexto.Calcados.Find(calcadoCriado.Id);
             Assert.IsNull(calcadoDeletado);
         }
-
-        [TestMethod]
-        [ExpectedException(typeof(BusinessException))]
-        public void DeletarCalcadoComRelacionamentoRepositorioTeste()
-        {
-            Calcado calcado = _repositorio.Buscar(1);
-
-            _repositorio.Deletar(calcado);
-
-            Calcado calcadoDeletado = _contexto.Calcados.Find(1);
-            Assert.IsNull(calcadoDeletado);
-        }
     }
 }

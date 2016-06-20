@@ -12,7 +12,8 @@ namespace WebShoes.Dominio
         public double Desconto { get; set; }
         public Calcado Calcado { get; set; }
         public int Quantidade { get; set; }
-        public double Valor()
+        public double Valor { get; set; }
+        public double CalcularValor()
         {
             double valorDescontado = Calcado.Valor - (Calcado.Valor * (Desconto / 100));
             return valorDescontado * Quantidade;
@@ -27,10 +28,11 @@ namespace WebShoes.Dominio
             Calcado = calcado;
             Desconto = desconto;
             Quantidade = quantidade;
+            Valor = CalcularValor();
         }
         public override string ToString()
         {
-            return string.Format("{0} - {1}: R$ {2}", Quantidade, Calcado, Valor());
+            return string.Format("{0} - {1}: R$ {2}", Quantidade, Calcado, Valor);
         }
     }
 }
