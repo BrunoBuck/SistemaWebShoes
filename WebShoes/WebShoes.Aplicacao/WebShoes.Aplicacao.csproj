@@ -42,6 +42,8 @@
   <ItemGroup>
     <Compile Include="CalcadoAplicacao.cs" />
     <Compile Include="ICalcadoAplicacao.cs" />
+    <Compile Include="IOrdemDeCompraAplicacao.cs" />
+    <Compile Include="OrdemDeComprasAplcacao.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

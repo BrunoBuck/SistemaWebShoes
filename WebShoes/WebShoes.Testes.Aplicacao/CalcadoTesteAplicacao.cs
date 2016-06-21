@@ -23,7 +23,19 @@ namespace WebShoes.Testes.Aplicacao
             // ARRANGE - CONFIGURAR OBJETO MENTIRA
             var repositoriofake = new Mock<ICalcadoRepositorio>();
             repositoriofake.Setup(x => x.Adicionar(calcado)).Returns(new Calcado());
-            repositoriofake.Setup(x => x.BuscarTodos()).Returns(new List<Calcado>());
+
+            ICalcadoAplicacao servico = new CalcadoAplicacao(repositoriofake.Object);
+
+            Calcado novoCalcado = servico.CriarCalcado(calcado);
+            repositoriofake.Verify(x => x.Adicionar(calcado));
+            
+        }
+
+        [TestMethod]
+        public void RetornarCalcadoAplicacao()
+        {
+            var repositorioFake = new Mock<ICalcadoAplicacao>();
+            repositorioFake.Setup(x => x.BuscarCalcado(1)).Returns(new Calcado());
         }
     }
 }

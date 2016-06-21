@@ -7,7 +7,7 @@ using WebShoes.Dominio;
 using WebShoes.Dominio.Contratos;
 
 namespace WebShoes.Aplicacao
-{
+{ 
     
     public class CalcadoAplicacao : ICalcadoAplicacao
     {
