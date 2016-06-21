@@ -13,5 +13,6 @@ namespace WebShoes.Dominio.Contratos
         List<Calcado> BuscarTodos();
         Calcado Atualizar(Calcado calcado);
         void Deletar(Calcado calcado);
+        void BuscarCalcado(int v);
     }
 }
