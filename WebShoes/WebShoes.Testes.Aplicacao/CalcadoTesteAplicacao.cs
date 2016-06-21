@@ -55,5 +55,26 @@ namespace WebShoes.Testes.Aplicacao
             ICalcadoAplicacao servico = new CalcadoAplicacao(repositorioFake.Object);
             Calcado novoCalcado = servico.AtualizarCalcado(calcado);
         }
-    }
+
+        public void DeletarCalcadoAplicacaoTeste()
+        {
+            Calcado calcado = new Calcado("TÊNIS NIKE AIR JORDAN 1 LOW",
+                                            "Nike",
+                                            "Vermelho",
+                                            41, 300);
+
+
+            var repositorioFake = new Mock<ICalcadoRepositorio>();
+            repositorioFake.Setup(x => x.Deletar(calcado));
+            List<Calcado> calcados = new List<Calcado>();
+            calcados.Add(calcado);
+            repositorioFake.Setup(x => x.BuscarTodos()).Returns(calcados);
+
+
+            ICalcadoAplicacao servico = new CalcadoAplicacao(repositorioFake.Object);
+
+            servico.DeletarCalcado(calcado);
+
+            repositorioFake.Verify(x => x.Deletar(calcado));
+        }
 }
