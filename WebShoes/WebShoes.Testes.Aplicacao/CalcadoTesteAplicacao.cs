@@ -36,6 +36,9 @@ namespace WebShoes.Testes.Aplicacao
         {
             var repositorioFake = new Mock<ICalcadoAplicacao>();
             repositorioFake.Setup(x => x.BuscarCalcado(1)).Returns(new Calcado());
+
+            ICalcadoAplicacao servico = new CalcadoAplicacao(repositorioFake.Object);
+            Calcado calcado = servico.BuscarCalcado(1);
         }
     }
 }

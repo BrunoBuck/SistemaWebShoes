@@ -9,6 +9,6 @@ namespace WebShoes.Aplicacao
         Calcado AtualizarCalcado(Calcado cliente);
         void DeletarCalcado(Calcado cliente);
         Calcado BuscarCalcado(Calcado cliente);
-
+        Calcado BuscarCalcado(int v);
     }
 }

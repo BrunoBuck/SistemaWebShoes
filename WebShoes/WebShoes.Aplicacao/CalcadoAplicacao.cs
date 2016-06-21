@@ -13,10 +13,16 @@ namespace WebShoes.Aplicacao
     {
 
         private ICalcadoRepositorio _repositorio;
+        
 
         public CalcadoAplicacao (ICalcadoRepositorio repositorio)
         {
             _repositorio = repositorio;
+        }
+
+        public CalcadoAplicacao(ICalcadoAplicacao calcado)
+        {
+            
         }
 
         public Calcado CriarCalcado(Calcado calcado)
@@ -31,7 +37,7 @@ namespace WebShoes.Aplicacao
             return null;
         }
 
-        private bool ExisteCalcado(int id)
+        public bool ExisteCalcado(int id)
         {
             return false;
         }
@@ -70,9 +76,6 @@ namespace WebShoes.Aplicacao
            
         }
 
-        bool ICalcadoAplicacao.ExisteCalcado(int id)
-        {
-            throw new NotImplementedException();
-        }
+        
     }
 }
