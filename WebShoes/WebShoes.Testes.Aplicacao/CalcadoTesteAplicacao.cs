@@ -15,9 +15,9 @@ namespace WebShoes.Testes.Aplicacao
         public void CriarCalcadoAplicacaoTeste()
         {
 
-            Calcado calcado = new Calcado("TÊNIS NIKE AIR JORDAN 1 LOW", 
-                                            "Nike", 
-                                            "Vermelho", 
+            Calcado calcado = new Calcado("TÊNIS NIKE AIR JORDAN 1 LOW",
+                                            "Nike",
+                                            "Vermelho",
                                             41, 300);
 
             // ARRANGE - CONFIGURAR OBJETO MENTIRA
@@ -28,7 +28,7 @@ namespace WebShoes.Testes.Aplicacao
 
             Calcado novoCalcado = servico.CriarCalcado(calcado);
             repositoriofake.Verify(x => x.Adicionar(calcado));
-            
+
         }
 
         [TestMethod]
@@ -77,4 +77,5 @@ namespace WebShoes.Testes.Aplicacao
 
             repositorioFake.Verify(x => x.Deletar(calcado));
         }
+    }
 }

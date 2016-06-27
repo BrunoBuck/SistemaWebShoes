@@ -76,6 +76,9 @@ namespace WebShoes.Aplicacao
            
         }
 
-        
+        public Calcado BuscarCalcado(int v)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

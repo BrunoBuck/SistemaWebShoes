@@ -39,7 +39,12 @@ namespace WebShoes.Infra.Dados.Repositorio
                 return _contexto.Calcados.Find(id);
             }
 
-           public List<Calcado> BuscarTodos()
+        public Calcado BuscarCalcado(int id)
+        {
+            return _contexto.Calcados.Find(id);
+        }
+
+        public List<Calcado> BuscarTodos()
            {
                return _contexto.Calcados.ToList();
            }
